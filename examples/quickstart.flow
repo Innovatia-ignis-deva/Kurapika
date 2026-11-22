@@ -1,0 +1,18 @@
+title: Login Flow
+theme neutral
+devas: share_layout: 4/5
+
+flowchart tb
+
+start A: Start
+block B: Enter password
+decide C: Password valid
+block D: Open dashboard
+block E: Show error
+stop F: Done
+
+A -> B -> C
+C -> D when Yes
+C -> E when No
+E -> B
+D -> F

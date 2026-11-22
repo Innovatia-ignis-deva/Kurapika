@@ -1,0 +1,10 @@
+template service(NAME):
+    block NAME_app: NAME service
+    db NAME_db: NAME data
+    NAME_app -> NAME_db
+
+flowchart lsrs
+block gateway: Gateway
+use service(auth)
+use service(billing)
+gateway -> auth_app, billing_app

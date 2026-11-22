@@ -1,0 +1,9 @@
+flowchart lsrs
+start S: Order placed
+parallel F to J via pack, label, invoice
+block pack: Pack items
+block label: Print label
+block invoice: Create invoice
+block done: Ship
+S -> F
+J -> done

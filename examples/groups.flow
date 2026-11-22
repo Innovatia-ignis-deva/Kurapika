@@ -1,0 +1,10 @@
+flowchart lsrs
+group "Build":
+    block compile: Compile
+    block test: Run tests
+    compile -> test
+group "Release":
+    block tag: Tag version
+    block publish: Publish
+    tag -> publish
+test -> tag when Green

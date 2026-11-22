@@ -1,0 +1,10 @@
+flowchart tb
+start A: Start
+block B: Enter code
+decide C: Code valid
+block D: Unlock
+block E: Show error
+A -> B -> C
+C -> D when Yes
+C -> E when No
+E -> B

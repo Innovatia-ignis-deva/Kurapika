@@ -1,0 +1,5 @@
+flowchart tb
+start A: Begin
+block B: Work
+stop C: Finish
+A -> B -> C

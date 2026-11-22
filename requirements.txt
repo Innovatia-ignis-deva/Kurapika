@@ -1,0 +1,4 @@
+streamlit>=1.30
+Pillow>=10.0
+# optional: server-side PNG/PDF/JPG/WEBP export (needs the Cairo library)
+# cairosvg>=2.7

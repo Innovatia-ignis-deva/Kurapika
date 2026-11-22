@@ -1,0 +1,5 @@
+let env = Staging
+flowchart tb
+start A: Deploy to $env
+block B: Run smoke tests
+A -> B

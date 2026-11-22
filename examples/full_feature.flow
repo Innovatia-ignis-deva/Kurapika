@@ -1,0 +1,40 @@
+version 2
+title: Release Pipeline
+subtitle: Weekly cycle
+theme neutral
+style classic
+engine elk
+placement brandes-koepf
+devas: share_layout: 16/9
+devas: share_anchor: center
+devas: share_margin: 6%
+devas: export_width: 1920
+devas: seed: 7
+devas: autonumber: nodes
+devas: alt: Release pipeline from commit to production
+
+class gate:
+    fill #e8f0fe
+    border #1f6feb
+
+flowchart lsrs
+
+start A: Commit
+pipeline Build as group:
+    Compile
+    Unit tests
+    Package
+decide G: Quality gate
+block R: Release candidate
+block P: Production
+stop Z: Done
+
+A -> build_1
+build_3 -> G
+G -> R when Pass
+G -> build_1 when Fail
+R -> P -> Z
+G is gate
+
+legend:
+    fill #e8f0fe = Gate

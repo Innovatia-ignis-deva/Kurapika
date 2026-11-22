@@ -1,0 +1,16 @@
+flowchart tb
+tag A, B: main
+tag E: error
+start A: Start
+block B: Work
+block E: Handle error
+stop F: Done
+A -> B -> F
+B -.-> E when fails
+
+view "Happy path":
+    hide tag error
+    share_layout 16/9
+
+view "Everything":
+    share_layout 1/1

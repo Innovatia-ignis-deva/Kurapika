@@ -1,0 +1,10 @@
+class warn:
+    fill #fff3cd
+    border #d39e00
+
+flowchart tb
+block A: Check disk
+block B: Disk almost full
+A -> B
+B is warn
+set edge e0: color #d39e00, width 3

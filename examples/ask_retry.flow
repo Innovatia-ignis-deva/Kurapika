@@ -1,0 +1,10 @@
+flowchart tb
+start A: Start
+block B: Call payment API
+ask C: Payment accepted
+    yes D
+    no E
+block D: Send receipt
+block E: Log failure
+A -> B -> C
+retry E to B max 3

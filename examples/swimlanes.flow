@@ -1,0 +1,8 @@
+flowchart tb
+lane "Customer":
+    start A: Place order
+    block D: Receive item
+lane "Shop":
+    block B: Confirm order
+    block C: Ship item
+chain A, B, C, D
