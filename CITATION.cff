@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Panda"
+    given-names: "Devashrit"
+    orcid: "https://orcid.org/0009-0002-0380-2714"
+title: "Kurapika"
+abstract: "A declarative Domain-Specific Language (DSL) and deterministic vector layout engine in Python for compiling plain-text .flow scripts into structured diagrams."
+keywords:
+  - dsl
+  - compiler
+  - diagramming
+  - layout-engine
+  - python
+  - flowchart
+license: Apache-2.0
+version: "0.1.0"
+date-released: "2026-11-22"
+repository-code: "https://github.com/Innovatia-ignis-deva/Kurapika"
+url: "https://github.com/Innovatia-ignis-deva/Kurapika"
